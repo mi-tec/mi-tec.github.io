@@ -11,6 +11,7 @@
 			background-color: map-get($colors, white);
 			padding: px-to-rem(78px) px-to-rem(21px) px-to-rem(124px)
 				px-to-rem(24px);
+			transition: 0.3s ease-in-out;
 			.navigation-menu {
 				margin-bottom: px-to-rem(34px);
 				.navigation {
@@ -21,6 +22,9 @@
 								display: flex;
 								align-items: center;
 								margin-bottom: px-to-rem(16px);
+								a {
+									display: block;
+								}
 								&:last-child {
 									margin-bottom: 0;
 								}
@@ -123,6 +127,7 @@
 
 			&.menu-active {
 				transform: translateX(-300px);
+				overflow-y: scroll;
 			}
 		}
 
