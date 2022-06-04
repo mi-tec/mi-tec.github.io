@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Javascript / Gulp / Sass</title>
 
-		<link rel="stylesheet" href="style.css?vid=1654369146787" />
+		<link rel="stylesheet" href="style.css?vid=1654374347471" />
 	</head>
 	<body>
 		<header class="header">
@@ -70,6 +70,32 @@
 			</div>
 		</header>
 
-		<script src="js/App.js?vid=1654369146787"></script>
+		<section class="component hero">
+			<picture>
+				<source
+					media="(min-width:1440px)"
+					srcset="./src/images/image-hero-desktop.png"
+				/>
+				<img
+					src="./src/images/image-hero-mobile.png"
+					class="hero__image"
+				/>
+			</picture>
+		</section>
+
+		<section class="component main">
+			<h1 class="main__heading">Make remote work</h1>
+			<div class="main__description">
+				<p>
+					Get your team in sync, no matter your location. Streamline
+					processes, create team rituals, and watch productivity soar.
+				</p>
+			</div>
+			<div class="main__link">
+				<a href="#">Learn More</a>
+			</div>
+		</section>
+
+		<script src="js/App.js?vid=1654374347471"></script>
 	</body>
 </html>
