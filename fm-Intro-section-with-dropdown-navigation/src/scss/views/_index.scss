@@ -1,0 +1,9 @@
+body {
+	color: map-get($colors, gray);
+	overflow: hidden;
+	box-sizing: border-box;
+	font-family: map-get($font-famliy, epilogue);
+	&.body-menu {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+}
