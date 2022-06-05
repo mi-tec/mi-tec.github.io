@@ -1,5 +1,6 @@
 export const CLASS_NAMES = {
 	BODY: "body",
+	BODY_ACTIVE: "body--active",
 	BODY_MENU: "body-menu",
 	HAS_CHILD: "has-child",
 	HAS_CHILD_ACTIVE: "has-child--active",
