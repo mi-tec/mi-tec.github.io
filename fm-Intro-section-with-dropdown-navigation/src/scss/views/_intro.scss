@@ -33,6 +33,7 @@
 	}
 
 	&__logos {
+		margin-bottom: px-to-rem(94px);
 		&-list {
 			display: flex;
 			column-gap: 28px;
