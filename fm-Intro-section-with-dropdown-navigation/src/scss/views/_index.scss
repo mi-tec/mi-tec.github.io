@@ -2,8 +2,16 @@ body {
 	color: map-get($colors, gray);
 	box-sizing: border-box;
 	font-family: map-get($font-famliy, epilogue);
-	&.body-menu {
+}
+
+.body {
+	position: relative;
+	transition: 0.3s;
+	&--active {
+		position: absolute;
 		background-color: rgba(0, 0, 0, 0.8);
+		width: 100%;
+		height: 100%;
 	}
 }
 

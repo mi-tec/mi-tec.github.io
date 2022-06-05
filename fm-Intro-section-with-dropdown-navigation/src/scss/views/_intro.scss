@@ -1,4 +1,4 @@
-.main {
+.intro {
 	padding: 0 px-to-rem(16px);
 	&__heading {
 		font-size: px-to-rem(36px);
@@ -28,7 +28,15 @@
 		letter-spacing: -0.2222222238779068px;
 		text-align: center;
 		max-width: 135px;
-		margin: 0 auto;
+		margin: 0 auto px-to-rem(48px) auto;
 		border-radius: px-to-rem(15px);
+	}
+
+	&__logos {
+		&-list {
+			display: flex;
+			column-gap: 28px;
+			align-items: center;
+		}
 	}
 }

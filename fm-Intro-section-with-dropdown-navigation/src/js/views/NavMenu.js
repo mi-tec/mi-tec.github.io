@@ -1,6 +1,6 @@
 import { CLASS_NAMES, EVENTS, SELECTORS } from "../variables";
 function NavMenu() {
-	const body = document.querySelector(SELECTORS.BODY);
+	const body = document.querySelector(`.${CLASS_NAMES.BODY}`);
 	const hamburgermenudiv = document.querySelector(
 		`.${CLASS_NAMES.HEADER_WRAPPER_HAMBURGER}`
 	);
@@ -19,7 +19,7 @@ function NavMenu() {
 		hamburgermenudiv.addEventListener(EVENTS.CLICK, (event) => {
 			hamburgermenudiv.classList.toggle(CLASS_NAMES.OPEN);
 			menuwrapper.classList.toggle(CLASS_NAMES.MENU_ACTIVE);
-			body.classList.toggle(CLASS_NAMES.BODY_MENU);
+			body.classList.toggle(CLASS_NAMES.BODY_ACTIVE);
 		});
 	}
 
