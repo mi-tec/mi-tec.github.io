@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="style.css?vid=1654376996654" />
 	</head>
 	<body>
+		<div class="body"></div>
 		<header class="header">
 			<div class="header__wrapper">
 				<div class="header__wrapper--logo">
@@ -70,29 +71,47 @@
 			</div>
 		</header>
 
-		<section class="component hero">
-			<picture>
-				<source
-					media="(min-width:1440px)"
-					srcset="./src/images/image-hero-desktop.png"
-				/>
-				<img
-					src="./src/images/image-hero-mobile.png"
-					class="hero__image"
-				/>
-			</picture>
-		</section>
-
-		<section class="component main">
-			<h1 class="main__heading">Make remote work</h1>
-			<div class="main__description">
-				<p>
-					Get your team in sync, no matter your location. Streamline
-					processes, create team rituals, and watch productivity soar.
-				</p>
+		<section class="component">
+			<div class="hero">
+				<picture>
+					<source
+						media="(min-width:1440px)"
+						srcset="./src/images/image-hero-desktop.png"
+					/>
+					<img
+						src="./src/images/image-hero-mobile.png"
+						class="hero__image"
+					/>
+				</picture>
 			</div>
-			<div class="main__link">
-				<a href="#">Learn More</a>
+			<div class="intro">
+				<h1 class="intro__heading">Make remote work</h1>
+				<div class="intro__description">
+					<p>
+						Get your team in sync, no matter your location.
+						Streamline processes, create team rituals, and watch
+						productivity soar.
+					</p>
+				</div>
+				<div class="intro__link">
+					<a href="#">Learn More</a>
+				</div>
+				<div class="intro__logos">
+					<ul class="intro__logos-list">
+						<li>
+							<img src="./src/images/client-databiz.svg" />
+						</li>
+						<li>
+							<img src="./src/images/client-audiophile.svg" />
+						</li>
+						<li>
+							<img src="./src/images/client-meet.svg" />
+						</li>
+						<li>
+							<img src="./src/images/client-maker.svg" />
+						</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 

@@ -14,6 +14,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 var CLASS_NAMES = {
   BODY: "body",
+  BODY_ACTIVE: "body--active",
   BODY_MENU: "body-menu",
   HAS_CHILD: "has-child",
   HAS_CHILD_ACTIVE: "has-child--active",
@@ -122,7 +123,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function NavMenu() {
-  var body = document.querySelector(_variables__WEBPACK_IMPORTED_MODULE_0__.SELECTORS.BODY);
+  var body = document.querySelector(".".concat(_variables__WEBPACK_IMPORTED_MODULE_0__.CLASS_NAMES.BODY));
   var hamburgermenudiv = document.querySelector(".".concat(_variables__WEBPACK_IMPORTED_MODULE_0__.CLASS_NAMES.HEADER_WRAPPER_HAMBURGER));
   var menuwrapper = document.querySelector(".".concat(_variables__WEBPACK_IMPORTED_MODULE_0__.CLASS_NAMES.HEADER_WRAPPER_MENU));
   var submenuslink = document.querySelectorAll(".".concat(_variables__WEBPACK_IMPORTED_MODULE_0__.CLASS_NAMES.HAS_CHILD_LINK));
@@ -133,7 +134,7 @@ function NavMenu() {
     hamburgermenudiv.addEventListener(_variables__WEBPACK_IMPORTED_MODULE_0__.EVENTS.CLICK, function (event) {
       hamburgermenudiv.classList.toggle(_variables__WEBPACK_IMPORTED_MODULE_0__.CLASS_NAMES.OPEN);
       menuwrapper.classList.toggle(_variables__WEBPACK_IMPORTED_MODULE_0__.CLASS_NAMES.MENU_ACTIVE);
-      body.classList.toggle(_variables__WEBPACK_IMPORTED_MODULE_0__.CLASS_NAMES.BODY_MENU);
+      body.classList.toggle(_variables__WEBPACK_IMPORTED_MODULE_0__.CLASS_NAMES.BODY_ACTIVE);
     });
   }
 
