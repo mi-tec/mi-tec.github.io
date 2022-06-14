@@ -17,5 +17,14 @@ body {
 
 .component {
 	max-width: 375px;
-	margin: 0 auto;
+	margin: px-to-rem(24px) auto px-to-rem(94px) auto;
+	@media screen and (min-width: 1440px) {
+		display: flex;
+		margin: 0;
+		padding: px-to-rem(70px) 0 px-to-rem(122px) 0;
+		max-width: px-to-rem(1145px);
+		margin: 0 auto;
+		align-items: flex-end;
+		column-gap: px-to-rem(120px);
+	}
 }

@@ -2,6 +2,14 @@
 	&__wrapper {
 		padding: px-to-rem(16px) px-to-rem(16px) 0 px-to-rem(16px);
 		position: relative;
+		@media screen and (min-width: 1440px) {
+			padding: px-to-rem(20px) px-to-rem(40px) 0 px-to-rem(40px);
+			display: flex;
+			column-gap: 62px;
+			align-items: center;
+			max-width: 1440px;
+			margin: 0 auto;
+		}
 		&-menu {
 			height: 100vh;
 			width: px-to-rem(240px);
@@ -12,9 +20,40 @@
 			padding: px-to-rem(78px) px-to-rem(21px) px-to-rem(124px)
 				px-to-rem(24px);
 			transition: 0.3s ease-in-out;
+
+			@media screen and (min-width: 1440px) {
+				position: static;
+				height: auto;
+				display: flex;
+				width: 100%;
+				padding: 0;
+				justify-content: space-between;
+				align-items: center;
+				background-color: transparent;
+			}
+
 			.navigation-menu {
 				margin-bottom: px-to-rem(34px);
+				@media screen and (min-width: 1440px) {
+					margin-bottom: 0;
+				}
 				.navigation {
+					@media screen and (min-width: 1440px) {
+						display: flex;
+						column-gap: 40px;
+					}
+					li {
+						a {
+							@media screen and (min-width: 1440px) {
+								&:hover {
+									color: map-get(
+										$map: $colors,
+										$key: black
+									) !important;
+								}
+							}
+						}
+					}
 					.navigation-item {
 						.navigation-inner {
 							padding: px-to-rem(24px) 0 0 px-to-rem(24px);
@@ -88,7 +127,45 @@
 								background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23686868' stroke-width='1.5' fill='none' d='m1 5 4-4 4 4'/%3E%3C/svg%3E");
 								.navigation-inner {
 									display: block;
+									@media screen and (min-width: 1440px) {
+										position: absolute;
+										padding: 0;
+										margin-top: px-to-rem(20px);
+										padding: px-to-rem(24px);
+										border-radius: px-to-rem(10px);
+										box-shadow: 0px 10px 40px
+											rgba(0, 0, 0, 0.149126);
+										background-color: map-get(
+											$map: $colors,
+											$key: white
+										);
+									}
 								}
+							}
+
+							&.feature {
+								.navigation-inner {
+									@media screen and (min-width: 1440px) {
+										right: 0;
+									}
+								}
+							}
+
+							&.company {
+								.navigation-inner {
+									@media screen and (min-width: 1440px) {
+										left: 0;
+										a {
+											min-width: 100px;
+										}
+									}
+								}
+							}
+
+							@media screen and (min-width: 1440px) {
+								background-position-x: 100%;
+								padding-right: px-to-rem(17px);
+								position: relative;
 							}
 						}
 					}
@@ -96,6 +173,9 @@
 					li {
 						margin-bottom: px-to-rem(16px);
 						&:last-child() {
+							margin-bottom: 0;
+						}
+						@media screen and (min-width: 1440px) {
 							margin-bottom: 0;
 						}
 					}
@@ -110,14 +190,38 @@
 			}
 
 			.navigation-login {
+				@media screen and (min-width: 1440px) {
+					display: flex;
+					column-gap: 40px;
+					align-items: center;
+				}
 				.login {
 					margin-bottom: px-to-rem(16px);
+					@media screen and (min-width: 1440px) {
+						margin-bottom: 0;
+						&:hover {
+							color: map-get(
+								$map: $colors,
+								$key: black
+							) !important;
+						}
+					}
 				}
 
 				.register {
 					border: 1px solid map-get($colors, gray);
 					padding: px-to-rem(13px) 0 px-to-rem(13px) 0;
 					border-radius: px-to-rem(14px);
+					@media screen and (min-width: 1440px) {
+						padding: px-to-rem(13px) px-to-rem(23px);
+						&:hover {
+							color: map-get(
+								$map: $colors,
+								$key: black
+							) !important;
+							border: 1px solid map-get($colors, black);
+						}
+					}
 				}
 
 				a {
@@ -139,6 +243,9 @@
 			z-index: 999;
 			top: px-to-rem(16px);
 			right: px-to-rem(16px);
+			@media screen and (min-width: 1440px) {
+				display: none;
+			}
 			span {
 				width: px-to-rem(32px);
 				height: px-to-rem(3px);
