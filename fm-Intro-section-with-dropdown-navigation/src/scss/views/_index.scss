@@ -17,5 +17,5 @@ body {
 
 .component {
 	max-width: 375px;
-	margin: 0 auto;
+	margin: px-to-rem(24px) auto px-to-rem(94px) auto;
 }
