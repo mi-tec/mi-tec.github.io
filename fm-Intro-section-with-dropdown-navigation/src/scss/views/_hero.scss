@@ -1,8 +1,0 @@
-.hero {
-	margin-bottom: px-to-rem(50px);
-	@media screen and (min-width: 1440px) {
-		order: 2;
-		margin-bottom: 0;
-		max-width: px-to-rem(480px);
-	}
-}

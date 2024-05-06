@@ -1,1 +1,0 @@
-# mi-tec.github.io
