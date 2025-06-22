@@ -5,6 +5,10 @@ import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
+    <div
+        className='main-wrapper font-display'
+      >
     <App />
+    </div>
   </StrictMode>,
 )
