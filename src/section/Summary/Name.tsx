@@ -18,7 +18,7 @@ function Name() {
 
   return (
     <div className='text-center'>
-      <h1 className='text-4xl'>{displayedText}</h1>
+      <h1 className='text-4xl font-black'>{displayedText}</h1>
       <h2 className='mt-5 text-3xl'>Software Engineer</h2>
     </div>
   )
