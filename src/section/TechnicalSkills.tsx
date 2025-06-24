@@ -1,5 +1,3 @@
-import React from 'react'
-
 function TechnicalSkills() {
     return (
         <div className='mt-5'>
