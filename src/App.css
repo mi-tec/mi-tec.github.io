@@ -4,10 +4,6 @@
   padding: 1rem;
 }
 
-body {
-  background-color: var(--color-neutral-50);
-}
-
 .margin-auto {
   margin-left: auto;
   margin-right: auto;
