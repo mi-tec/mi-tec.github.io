@@ -37,9 +37,8 @@ const Navigation = () => {
                 </div>
 
                 <div
-                    className={`fixed inset-0 z-50 md:hidden ${
-                        isOpen ? 'flex' : 'hidden'
-                    } flex-col items-center justify-center bg-white space-y-6`}
+                    className={`fixed inset-0 z-50 md:hidden ${isOpen ? 'flex' : 'hidden'
+                        } flex-col items-center justify-center bg-white space-y-6`}
                 >
                     <Button
                         variant="ghost"
@@ -62,31 +61,31 @@ const Navigation = () => {
                             />
                         </svg>
                     </Button>
-                    <a href="#summary" className="text-2xl hover:text-gray-500" onClick={toggleMenu}>
+                    <a href="#summary" className="text-2xl hover:underline hover:text-gray-500" onClick={toggleMenu}>
                         Summary
                     </a>
-                    <a href="#about" className="text-2xl hover:text-gray-500" onClick={toggleMenu}>
+                    <a href="#about" className="text-2xl hover:underline hover:text-gray-500" onClick={toggleMenu}>
                         About
                     </a>
-                    <a href="#services" className="text-2xl hover:text-gray-500" onClick={toggleMenu}>
+                    <a href="#services" className="text-2xl hover:underline hover:text-gray-500" onClick={toggleMenu}>
                         Services
                     </a>
-                    <a href="#contact" className="text-2xl hover:text-gray-500" onClick={toggleMenu}>
+                    <a href="#contact" className="text-2xl hover:underline hover:text-gray-500" onClick={toggleMenu}>
                         Contact
                     </a>
                 </div>
 
                 <div className="hidden md:flex justify-center space-x-20">
-                    <a href="#summary" className="hover:text-gray-500">
+                    <a href="#summary" className="hover:underline hover:text-gray-500">
                         Summary
                     </a>
-                    <a href="#technical-skills" className="hover:text-gray-500">
+                    <a href="#technical-skills" className="hover:underline hover:text-gray-500">
                         Technical Skills
                     </a>
-                    <a href="#experience" className="hover:text-gray-500">
+                    <a href="#experience" className="hover:underline hover:text-gray-500">
                         Experience
                     </a>
-                    <a href="#contact" className="hover:text-gray-500">
+                    <a href="#contact" className="hover:underline hover:text-gray-500">
                         Contact
                     </a>
                 </div>

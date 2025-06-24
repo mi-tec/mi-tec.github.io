@@ -6,7 +6,7 @@ function Links() {
             <div>
                 <a
                     href="mailto:migara1225@gmail.com"
-                    className="text-sm underline-offset-4 hover:underline"
+                    className="text-sm underline-offset-4 hover:underline hover:text-gray-500"
                 >
                     Email
                 </a>
@@ -15,7 +15,7 @@ function Links() {
             <div>
                 <a
                     href="https://www.linkedin.com/in/migarak/"
-                    className="text-sm underline-offset-4 hover:underline"
+                    className="text-sm underline-offset-4 hover:underline hover:text-gray-500"
                     target='_blank'
                 >
                     LinkedIn
@@ -25,7 +25,7 @@ function Links() {
             <div>
                 <a
                     href="https://github.com/mi-tec"
-                    className="text-sm underline-offset-4 hover:underline"
+                    className="text-sm underline-offset-4 hover:underline hover:text-gray-500"
                     target='_blank'
                 >
                     GitHub

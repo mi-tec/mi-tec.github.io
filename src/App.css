@@ -4,8 +4,13 @@
   padding: 1rem;
 }
 
-body{
+body {
   background-color: var(--color-neutral-50);
+}
+
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo {
@@ -14,9 +19,11 @@ body{
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -25,6 +32,7 @@ body{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

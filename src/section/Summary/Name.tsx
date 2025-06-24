@@ -17,7 +17,8 @@ function Name() {
   }, [index, name]);
 
   return (
-    <div className='text-center text-2xl'>{displayedText}</div>
+    <div className='text-center'>
+      <h1 className='text-4xl'>{displayedText}</h1></div>
   )
 }
 
