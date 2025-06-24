@@ -6,10 +6,8 @@ import TechnicalSkills from "./section/TechnicalSkills";
 
 function App() {
   return (
-    <div
-      className='main-wrapper font-display '
-    >
-      <div className="mt-8 p-1 md:w-3xl margin-auto">
+    <div className="main-wrapper font-display">
+      <div className="mt-8 p-1 md:max-w-3xl mx-auto">
         <Name />
         <Links />
         <Summary />
