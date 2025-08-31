@@ -2,6 +2,7 @@ import "./App.css";
 import { ModeToggle } from "./components/mode-toggle";
 import Experience from "./section/Experience";
 import Portlofios from "./section/Portfolios";
+import Contact from "./section/Summary/Contact";
 import Links from "./section/Summary/Links";
 import Name from "./section/Summary/Name";
 import Summary from "./section/Summary/Summary";
@@ -13,6 +14,7 @@ function App() {
       <ModeToggle />
       <div className="mt-8 p-1 md:max-w-3xl mx-auto">
         <Name />
+        <Contact />
         <Links />
         <Summary />
         <TechnicalSkills />
